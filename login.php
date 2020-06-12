@@ -1,4 +1,5 @@
 <?php include 'header.php';?>
+<?php include 'cadastrarCliente.php';?>
 
 <div id="allDiv">
 	<div id="esqLogin" class="container">
@@ -105,7 +106,7 @@
 				</table>
 
 				<center>
-					<input type="submit" value="Cadastrar">
+					<input type="submit" name="button" value="Cadastrar">
 				</center>
 			</form>
 		</div>
