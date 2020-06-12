@@ -1,3 +1,4 @@
+
 <?php include 'header.php';?>
 
 <div id="allDiv">
@@ -19,7 +20,6 @@
 				echo '	<div id="voo'.$cont.'">
 							<img src="img/voo.PNG">
 							<p id="vooTitulo">'. $row['origem_aita'] .' - '. $row['destino_aita'] .'</p>
-
 							<div id="vooOrigem">
 								<p>'. $row['origem'] .'</p>
 								<p>'. $row['horario_partida'] .'</p>
@@ -29,14 +29,12 @@
 								<p>'. $row['destino'] .'</p>
 								<p>'. $row['horario_chegada'] .'</p>
 							</div>
-
 							<div id="vooSel">
 								<center>
-									<input type="radio" name="ida" id="sim" value="'. $row['id'] .'">
-									<br><label for="sim">Selecionar Passagem</label>
+									<input type="radio" name="ida" id="sim" value="'. $row['id'] .'" required>
+									<label for="sim">Selecionar Passagem</label>
 								</center>
 							</div>
-
 						</div>';
 				$cont=$cont+1;
 			}
