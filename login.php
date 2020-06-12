@@ -44,11 +44,10 @@
 			</form>
 		</div>
 	</div>
-
 	<div id="dirLogin" class="container">
 		<div id="dirTextoLogin">
 			<center><h1>Cadastro</h1></center>
-			<form action="cadastrarCliente.php" method="post">
+			<form onsubmit="" method="post">
 				<table>
 					<tr>
 						<td>
@@ -114,6 +113,7 @@
 </div>
 
 <?php include 'footer.php';?>
+
 
 <script>
 	function validar() {
